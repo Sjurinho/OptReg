@@ -11,7 +11,7 @@ u = z(N*nx+1:N*nx+N*mu);
 
 disp(opts);
 
-%Plots
+%% Plots
 figure(2)
 plot(0:N, y, '-o')
 hold on;
@@ -19,4 +19,4 @@ plot(0:N-1, u, '-o')
 title('Open loop optimized system')
 xlabel('timestep[n]')
 legend({'$y$', '$u$'}, 'Interpreter', 'Latex', 'FontSize', 14);
-%hold off;
+hold off;
